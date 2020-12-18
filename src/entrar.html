@@ -1,0 +1,48 @@
+@@include('./components/html/head.html')
+@@include('./components/html/header.html')
+
+@@include('./components/title.html', { "title": "Entrar" })
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <form name="formSignIn">
+
+                <div class="alert alert-danger d-none" id="errorSignIn" role="alert">
+                    E-mail e/ou senha inválidos!
+                </div>
+
+                @@include('./components/input.html', {
+                    "id": "email",
+                    "type": "email",
+                    "title": "E-mail",
+                    "required": "required",
+                })
+
+                @@include('./components/input.html', {
+                    "id": "password",
+                    "type": "password",
+                    "title": "Senha",
+                    "required": "required",
+                })
+
+
+                @@include('./components/button.html', {
+                    "class": "primary",
+                    "id": "btnSignIn",
+                    "title": "Entrar",
+                })
+
+                @@include('./components/a.html', {
+                    "link": "./cadastrar.html",
+                    "class": "link",
+                    "title": "Criar conta",
+                })
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@@include('./components/html/footer.html')

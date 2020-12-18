@@ -1,0 +1,65 @@
+@@include('./components/html/head.html')
+@@include('./components/html/header.html')
+
+@@include('./components/title.html', { "title": "Cadastrar" })
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            <form name="formSignUp">
+
+                @@include('./components/input.html', {
+                    "id": "nameUser",
+                    "type": "text",
+                    "title": "Name",
+                    "required": "required",
+                })
+
+                @@include('./components/input.html', {
+                    "id": "email",
+                    "type": "email",
+                    "title": "E-mail",
+                    "required": "required",
+                })
+
+                @@include('./components/input.html', {
+                    "id": "confirmEmail",
+                    "type": "email",
+                    "title": "Confirmar e-mail",
+                    "required": "required",
+                })
+
+                @@include('./components/input.html', {
+                    "id": "password",
+                    "type": "password",
+                    "title": "Senha",
+                    "required": "required",
+                })
+
+                @@include('./components/input.html', {
+                    "id": "confirmPassword",
+                    "type": "password",
+                    "title": "Confirmar senha",
+                    "required": "required",
+                })
+
+
+                @@include('./components/button.html', {
+                    "class": "primary",
+                    "id": "btnSignUp",
+                    "title": "Cadastrar",
+                })
+
+                @@include('./components/a.html', {
+                    "link": "./entrar.html",
+                    "class": "link",
+                    "title": "Já tenho conta",
+                })
+            </form>
+
+        </div>
+    </div>
+</div>
+
+@@include('./components/html/footer.html')

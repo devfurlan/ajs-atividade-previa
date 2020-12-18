@@ -1,0 +1,25 @@
+header {
+  margin: 1em 0;
+
+  .social {
+
+    &__icon{
+      color: #958D81;
+      font-size: 1.2em;
+      margin: 0 .2em;
+
+      &:hover {
+        color: $white;
+        //transition: all 500ms linear;
+      }
+    }
+  }
+
+  .navbar {
+    justify-content: center;
+
+    &-brand img {
+      width: 150px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.card {
+  color: $white;
+  background-color: #31302B;
+  border: 1px solid #4E4D49;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+
+  &__title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #FCC14E;
+  }
+
+  &__description {
+    p {
+      font-size: .96rem;
+      line-height: 1.6;
+    }
+  }
+}
