@@ -21,7 +21,10 @@ function signIn(e) {
 function validEmail(inputs) {
   const getUsers = JSON.parse(localStorage.getItem('users'));
 
-  const hasUser = getUsers.filter(user => user.email === inputs.email && user.password === inputs.password);
+  let hasUser = [];
+  if (localStorage.hasOwnProperty('users')) {
+    hasUser = getUsers.filter(user => user.email === inputs.email && user.password === inputs.password);
+  }
 
   return !!hasUser[0];
 }
